@@ -1,0 +1,13 @@
+matplotlib
+numpy
+pandas
+Pillow
+plotly
+pytz
+requests
+scikit_learn
+seaborn
+streamlit
+yfinance
+cvxpy
+scipy
