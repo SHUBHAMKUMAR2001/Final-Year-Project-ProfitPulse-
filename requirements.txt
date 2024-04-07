@@ -11,3 +11,5 @@ streamlit
 yfinance
 cvxpy
 scipy
+prophet
+streamlit_option_menu

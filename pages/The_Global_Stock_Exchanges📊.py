@@ -1,3 +1,7 @@
+import subprocess
+
+# Install Prophet library using pip
+subprocess.call(['pip', 'install', 'prophet'])
 import pandas as pd
 import numpy as np
 import datetime
@@ -33,7 +37,7 @@ from PIL import Image
 st.set_page_config(page_title='Stock Index Dashboard', page_icon=':money_with_wings:', 
                    layout="wide", initial_sidebar_state="expanded")
 
-image = Image.open(r"C:\Users\2000s\Desktop\Final_Year_Proj\Stock_Index_App\pages\stock_market.jpg")
+image = Image.open(r"pages/stock_market.jpg")
 st.image(image, width=700)
 
 # Function for streamlit cache
@@ -71,7 +75,7 @@ with tab1:
 	time_max = time_now - datetime.timedelta(weeks=1) # Take 1 weeks before time_now
 
 	# Import indices description
-	idx_info = load_data(r'C:\Users\2000s\Desktop\Final_Year_Proj\Stock_Index_App\Indices_Description.csv')
+	idx_info = load_data(r'/workspaces/Final-Year-Project-ProfitPulse-/pages/Indices_Description.csv')
 
 	st.write('<span style="color:yellow;font-size:30px;font-weight:bold">Stock Indices Description</span>', unsafe_allow_html=True)
 
