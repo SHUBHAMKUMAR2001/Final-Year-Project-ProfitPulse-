@@ -70,6 +70,7 @@ with tab1:
 	time_now = datetime.date(year=year_now, month=month_now, day=1) # Take first day of month of today's date
 	time_max = time_now - datetime.timedelta(weeks=1) # Take 1 weeks before time_now
 
+
 	# Import indices description
 	idx_info = load_data(r'C:\Users\2000s\Desktop\Final_Year_Proj\Stock_Index_App\Indices_Description.csv')
 

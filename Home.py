@@ -31,7 +31,7 @@ body {
 h1 {
     font-size: 72px;
     position: relative;
-    text-shadow: 4.5px 5px 4.5px rgba(248, 103, 0, 0.8); /* Dark yellow shadow */
+    text-shadow: 4.5px 5px 4.5px rgba(84, 164, 243, 1); /* Dark yellow shadow */
 }
 
 .pulse {

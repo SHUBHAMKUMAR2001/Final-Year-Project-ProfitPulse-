@@ -100,7 +100,7 @@ with col2:
 
 # read csv file
 # URL to the raw CSV file on GitHub
-csv_url = "https://raw.githubusercontent.com/SHUBHAMKUMAR2001/ProfitPulse/main/ProfitPulseData.csv"
+csv_url = "https://raw.githubusercontent.com/HetPandya23/Final_Year_Project/main/ProfitPulseData.csv"
 
 # Read the CSV file into a DataFrame
 stock_df = pd.read_csv(csv_url)
@@ -347,6 +347,7 @@ elif(option == 'About'):
     """, unsafe_allow_html=True)
     
     st.markdown('<p class="big-font">ProfitPusle is a web application that allows users to visualize Stock Performance Comparison, Real-Time Stock Prices and Stock Price Prediction. This application is developed using Streamlit. Streamlit is an open source app framework in Python language. It helps users to create web apps for Data Science and Machine Learning in a short time. This Project is developed by Shubham, Sanskar and Shams.</p>', unsafe_allow_html=True)
-    st.subheader('Shubham Kumar')
-    st.subheader('Sanskar Kumar Saraf')
-    st.subheader('Shams Ahmad')
+    st.subheader('Het Pandya')
+    st.subheader('Swapnil Dwivedi')
+    st.subheader('Manish Kumar Sahu')
+    st.subheader('Prabhat Kumar')
