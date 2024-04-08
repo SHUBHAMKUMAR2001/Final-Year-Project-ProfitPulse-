@@ -1,3 +1,7 @@
+import subprocess
+
+# Install Prophet library using pip
+subprocess.call(['pip', 'install', 'prophet'])
 import pandas as pd
 import numpy as np
 import datetime
@@ -33,7 +37,7 @@ from PIL import Image
 st.set_page_config(page_title='Stock Index Dashboard', page_icon=':money_with_wings:', 
                    layout="wide", initial_sidebar_state="expanded")
 
-image = Image.open(r"C:\Users\2000s\Desktop\Final_Year_Proj\Stock_Index_App\pages\stock_market.jpg")
+image = Image.open(r"pages/stock_market.jpg")
 st.image(image, width=700)
 
 # Function for streamlit cache
@@ -72,7 +76,7 @@ with tab1:
 
 
 	# Import indices description
-	idx_info = load_data(r'C:\Users\2000s\Desktop\Final_Year_Proj\Stock_Index_App\Indices_Description.csv')
+	idx_info = load_data(r'pages/Indices_Description.csv')
 
 	st.write('<span style="color:yellow;font-size:30px;font-weight:bold">Stock Indices Description</span>', unsafe_allow_html=True)
 
@@ -119,7 +123,9 @@ with tab2:
 	# Save file in case link fails
 	world_idx = url_indices('https://finance.yahoo.com/world-indices')
 	if len(world_idx) <=1:
-		world_idx = pd.read_csv("World_Indices_Yahoo.csv")
+		# Save file in case link fails
+		url = 'https://raw.githubusercontent.com/SHUBHAMKUMAR2001/ProfitPulse-files/main/World_Indices_Yahoo.csv'
+		world_idx = url_indices(url)
 
 	# Get dict of names and tickers
 	# ticker_name = dict(zip(world_idx.iloc[:, 0],world_idx.iloc[:, 1]))
