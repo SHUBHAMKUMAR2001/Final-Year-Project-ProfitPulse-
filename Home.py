@@ -64,4 +64,4 @@ h3 {
 
 # Display the HTML code and the image
 st.markdown(html_code, unsafe_allow_html=True)
-st.image(image, caption='', use_column_width=True)
+st.image(image, caption='', use_container_width=True)
